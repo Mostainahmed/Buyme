@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
-<title>Buyme admin panel</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+	<title>Buyme admin panel</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+	<script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+	<script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+
 </head>
 <body>
-	<h1>Welcome to the buyme admin panel !!!!!</h1>
+	<div>
+		<nav class="navbar navbar-expand bg-dark navbar-dark">
+			<img th:src="@{/images/buy_me.png}" />
+		</nav>
+	</div>
+	<div class="container-fluid">
+		<h1>Welcome to the buyme admin panel !!!!!</h1>
+	</div>
+	
+	<div>
+		<p>Buyme Control Panel - Copyright &copy; Buyme</p>
+	</div>
+	
 </body>
 </html>
